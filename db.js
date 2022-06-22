@@ -4,11 +4,11 @@ const mysql = require('mysql');
 const moment = require('moment'); // 날짜 포멧을 위한 모듈
 
 var connection = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : 'root',
+    host : 'us-cdbr-east-05.cleardb.net',
+    user : 'b78046f24dbbb0',
+    password : '655bb985',
     port : '3306',
-    database : 'hnotice',
+    database : 'heroku_a10026ffac36fc8',
     dateStrings:'date' //날짜 시간 출력
 })
 

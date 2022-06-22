@@ -15,5 +15,8 @@
     "mysql": "^2.18.1",
     "parse-json": "^6.0.2",
     "static": "^2.0.0"
+  },
+  "scripts":{
+    "start" : "node ./bin/www.js"
   }
 }
