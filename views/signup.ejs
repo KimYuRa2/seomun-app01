@@ -1,0 +1,201 @@
+    <main class="signup_main">
+       <div class="signup_title">
+            <h1>회원가입</h1>
+        </div>
+
+        <section class="signup_sec">
+            <form name="signup">
+                <article class="check_info">
+                    <h2>회원구분정보</h2>
+                    <div class="box chkchk">
+                        <div>
+                            <input type="radio" id="guest" name="chk_info" value="guest">
+                            <label for="guest">개인회원</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="seller" name="chk_info" value="seller">
+                            <label for="seller">기업회원</label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="login_info">
+                    <h2>로그인 정보</h2>
+                    <div class="box">
+                        <div>
+                            <label>아이디</label>
+                            <input type="text" name="user_id"> 
+                        </div>
+                        <div>
+                            <label>비밀번호</label>
+                            <input type="password" name="user_pw1" placeholder="비밀번호 입력">
+                        </div>
+                        <div>
+                            <label>비밀번호 확인</label>
+                            <input type="password" name="user_pw2" placeholder="비밀번호 재확인">
+                            <input type="button" name="chk_pw" value="비밀번호 재확인">
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>회원 정보 입력</h2>
+                    <div class="box">
+                        <div>
+                            <label>이름</label>
+                            <input type="text" name="user_name">
+                        </div>
+                        <div>
+                            <label>이메일</label>
+                            <input type="email" name="user_email">
+                        </div>
+                        <div>
+                            <label>휴대폰 번호</label>
+                            <input type="text" name="user_phoneNum" placeholder="010-0000-0000">
+                        </div>
+                    </div>
+                    
+                </article>
+
+                <article id="expandable">
+                    <h2>셀러 신청 정보 입력</h2>
+                    <h4>* 셀러 회원만 정보 입력</h4>
+                    <div class="box">
+                        <div>
+                            <label>업체명</label>
+                            <input type="text" name="store_name">
+                        </div>
+                        <div>
+                            <label>사업자등록번호</label>
+                            <input type="text" name="store_regiNum" placeholder="000-00-00000">
+                        </div>
+                        <div>
+                            <label>대표 번호</label>
+                            <input type="text" name="store_num" placeholder="0000-0000">
+                        </div>
+                        <div>
+                            <label>대표자명</label>
+                            <input type="text" name="seller_name">
+                        </div>
+                        <div>
+                            <label>대표자 생년월일</label>
+                            <select name="b_year">
+                                <option value="" selected>-- 선택 --</option>
+                                <option value="1962">1962</option>
+                                <option value="1963">1963</option>
+                                <option value="1964">1964</option>
+                                <option value="1965">1965</option>
+                                <option value="1966">1966</option>
+                                <option value="1967">1967</option>
+                                <option value="1968">1968</option>
+                                <option value="1969">1969</option>
+                                <option value="1970">1970</option>
+                                <option value="1971">1971</option>
+                                <option value="1972">1972</option>
+                                <option value="1973">1973</option>
+                                <option value="1974">1974</option>
+                                <option value="1975">1975</option>
+                                <option value="1976">1976</option>
+                                <option value="1977">1977</option>
+                                <option value="1978">1978</option>
+                                <option value="1979">1979</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                            년
+                            <select name="b_month">
+                                <option value="" selected>-- 선택 --</option>
+                                <option value="1">1</option> 
+                                <option value="2">2</option> 
+                                <option value="3">3</option> 
+                                <option value="4">4</option> 
+                                <option value="5">5</option> 
+                                <option value="6">6</option> 
+                                <option value="7">7</option> 
+                                <option value="8">8</option> 
+                                <option value="9">9</option> 
+                                <option value="10">10</option> 
+                                <option value="11">11</option> 
+                                <option value="12">12</option> 
+                            </select>
+                            월
+                            <select name="b_date">
+                                <option value="" selected>-- 선택 --</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            일
+
+                        </div>
+                        <div>
+                            <label>이메일</label>
+                            <input type="text" name="seller_email">
+                        </div>
+                        <div>
+                            <label>휴대폰번호</label>
+                            <input type="text" name="seller_phoneNum" placeholder="010-0000-0000">
+                        </div>
+                        <div>
+                            <label>전화번호</label>
+                            <input type="number" name="store_name" placeholder="'- 빼고 입력">
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                        <button type="submit" id="signup_btn">회원 가입</button>
+                </article>
+            </form>
+        </section>
+    </main>

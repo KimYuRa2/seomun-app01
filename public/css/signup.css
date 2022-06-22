@@ -1,0 +1,88 @@
+.signup_main{
+    background-color: #fff;
+}
+.signup_sec{
+    width:1200px;
+    margin:70px auto 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.signup_title{
+    width:100%;
+    border-bottom : 1px solid #d9e1e2;
+}
+.signup_title>h1{
+    display: block;
+    font-size: 24px;
+    margin:50px 0;
+    text-align: center;
+}
+
+.signup_main h2{
+    font-size:20px;
+    font-weight: bold;
+    display:inline-block;
+
+}
+.expandable>h2{
+    font-size:20px;
+    font-weight: bold;
+    display:inline-block;
+}
+.signup_main h4{
+    display: inline-block;
+    font-size:16px;
+    margin-left:15px;
+    color:red;
+    line-height:30px;
+
+}
+.chkchk>div>input:checked .box{
+    display: none;
+}
+.check_info{
+    margin-bottom: 30px;
+}
+.box{
+    margin-top:10px;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    border : 5px solid #9c9c9c;
+}
+.box>div{
+    margin-bottom: 5px;
+}
+label{
+    display:inline-block;
+    width:125px;
+}
+
+/*안됨 ㅠㅠ*/
+#expandable{
+    display:block;
+}
+#seller:checked #expandable{
+    display:none;
+}
+
+
+#signup_btn{
+    display: block;
+    margin: auto;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .signup{
+        padding:30px;
+
+    }
+    .signup_sec{
+        width:100%;
+        margin:70px auto 100px;
+    }
+    .expandable>h4{
+        margin-left:0;
+    }
+}

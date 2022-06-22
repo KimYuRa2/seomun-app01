@@ -1,0 +1,191 @@
+<!--
+    서문야시장 main 페이지 ( 이름 변경 : main -> index )
+-->
+<!-- ejs :  (js에서 읽혀지는) html 문서! / html과 거의 유사함. -->
+
+<!-- layout.ejs파일 참고 > express-ejs-layouts으로 헤더/푸터 대신함 -->
+
+        <!-- 배너 -->
+    <main>
+
+    
+        <section class="main_section banner_main">
+            <div class="banner_marquee">
+                <div class="marquee_wrap">
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>
+                    <span class="marquee-banner__copy">도전! 투어미션</span>                
+                </div>
+            </div>
+
+            <div class="banner_main_img"></div>
+
+            <div class="banner">
+                <h2>
+                    대구의 밤 파티!<p>서문시장 야시장</p>
+                </h2>
+            </div>
+
+        </section>
+
+        <!--nav-->
+        <section class="main_section  nav_wrap">
+            <ul class="nav_main">
+                <li>
+                    <a href="intro">
+                        <div><img src="img/1.png"></div>
+                        <p>야시장소개</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div><img src="img/2.png"></div>
+                        <p>먹거리</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div><img src="img/3.png"></div>
+                        <p>보고 즐길거리</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="notice">
+                        <div><img src="img/4.png"></div>
+                        <p>공지사항</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <!--먹거리배너-->
+        <section class="food_atc main_section">
+            <div class="image_wrap">
+                <div class="main_img1"></div>
+            </div>
+
+            <div class="side_box">
+                <div class="text_box">
+                    <h1>먹거리</h1>
+                    <h3>夜하게 놀자, 대한민국 대표 야시장</h3>
+                    <h4>먹고, 마시고, 즐길 수 있는<br>
+                        대한민국 No.1 글로벌 야시장!<br>
+                        한국 전통식부터 스트리트 푸드, 퓨전 음식까지<br>
+                        다양한 음식들을 즐기실 수 있습니다.
+                    </h4>
+                </div>
+                <ul class="swiper_wrap">
+                        <li class="food1"><div></div></li>
+                        <li class="food2"><div></div></li>
+                        <li class="food3"><div></div></li>
+                        <li class="food4"><div></div></li>
+                        <li class="food5"><div></div></li>
+                </ul>
+                <div class="swiper_btn">
+                        <div class="swiper_prev"></div>
+                        <div class="swiper_next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--유튜브동영상-->
+        <section class="main_section">
+            <iframe id="video" width="100%" height="918" src="https://www.youtube.com/embed/5jIG-_TGSNE?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="main_section video_text_box">
+            <h3>
+                길거리음식 성지 !! 대구 서문야시장 길거리 음식 BEST 8
+                <p>Best Korean Street Food Compilation at a Night Market</p>
+            </h3>
+            <h4>
+                소문난 이모네 막창부터 직화불고기 덮밥 등 서문시장 대표 인기 메뉴들을 동영상으로 먼저 만나보아요.
+            </h4>
+        </section>
+
+
+        <!--즐길거리 배너-->
+        <section class="main_section enjoy_atc">
+            <div class="side_box2">
+                <div class="text_box2">
+                    <h1>즐길거리</h1>
+                    <h3>서문 야시장의 또 하나의 즐거움!</h3>
+                    <h4>
+                        밤마다 펼쳐지는 다양한 퍼포먼스들!<br>
+                        오직 서문시장야시장에서만 즐길 수 있어요.
+                    </h4>
+                </div>
+                <ul class="enjoy_imgs">
+                        <li class="enjoy1">
+                            <div></div>
+                        </li>
+                        <li class="enjoy2">
+                            <div></div>
+                        </li>
+                        <li class="enjoy3">
+                            <div></div>
+                        </li>
+                        <li class="enjoy4">
+                            <div></div>
+                        </li>
+                </ul>
+            </div>
+            <div class="image_wrap2">
+                <div class="main_img2"></div>
+            </div>
+        </section>
+
+        <!--볼거리 배너-->
+        <section class="main_section show_atc">
+            <div class="image_wrap3">
+                <div class="main_img3"></div>
+            </div>
+            <div class="side_box3">
+                <div class="text_box3">
+                    <h1>볼거리</h1>
+                    <h3>새로운 “FUN” 문화 공간</h3>
+                    <h4>
+                        미디어파사드, 인터랙티브 미디어아트<br>
+                        그리고 다양한 즐길거리들을 경험하고,<br>
+                        포토존에서 기념사진도 찍어보세요!
+                    </h4>
+                </div>
+                <ul class="show_imgs">
+                        <li class="show1">
+                            <div></div>
+                        </li>
+                        <li class="show2">
+                            <div></div>
+                        </li>
+                        <li class="show3">
+                            <div></div>
+                        </li>
+                        <li class="show4">
+                            <div></div>
+                        </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--모집/운영시간 버튼-->
+        <section class="main_section banner_btn">
+            <div class="btn_wrap">
+                <div class="btn1">
+                    <a href=""></a>
+                </div>
+                <div class="btn2">
+                    <a href=""></a>
+                </div>
+                <div class="btn3">
+                    <a href="notice"></a>
+                </div>
+            </div>
+        </section>
+    </main>

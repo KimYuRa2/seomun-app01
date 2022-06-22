@@ -1,0 +1,912 @@
+main{
+    background-color: #171717;
+}
+.main_section{
+    width:1440px;
+    margin-bottom : 218px;
+    margin:auto;
+}
+
+/**************banner_main*******************/
+.banner_main{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.banner_marquee{
+    width:100%;
+    height:40px;
+    padding-top:4px;
+    font-size: 18px;
+    line-height:36px;
+    letter-spacing: normal;
+    color:#fff;
+    box-sizing: border-box;
+    background-color: #5B06E7;
+    position:absolute;
+    top:0;
+    z-index: 1;
+}
+.marquee_wrap{
+    white-space: nowrap;
+    /*transform: translate(,0px) translateZ(0px);*/
+}
+.marquee-banner__copy{
+    cursor: pointer;
+    display:inline-block;
+    animation: marquee-banner__copy 5s linear infinite;
+    margin-right: 70px;
+}
+
+.banner_main_img{
+    display:block;
+    width:100%;
+    height:1048px;
+    overflow:hidden;
+    margin:0 auto;
+    background-image:url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner{
+    display:block;
+    width:570px;
+    height:288px;
+    background-color: #000000;
+    padding:80px 50px;
+    box-sizing: border-box;
+    position:absolute;
+    bottom:100px;
+    right:100px;
+    z-index:2;  
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    
+}
+.banner h2{
+    font-size:32px;
+}
+.banner h2>p{
+    font-size:46px;
+}
+
+/**************** nav *************/
+.nav_main{
+    margin:177px auto;
+    display:flex;
+}
+.nav_main>li{
+    margin: auto;
+}
+.nav_main div{
+    width:80%;
+    margin:auto;
+}
+.nav_main div>img{
+    width:100%;
+}
+.nav_main p{
+    color:#4d4d4d;
+    text-align: center;
+    line-height: 30px;
+    font-size:16px;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+/*********** 먹거리 배너 **********/
+.food_atc{
+    margin: auto;
+    box-sizing: border-box;
+    display:flex;
+    position:relative;
+    overflow: hidden;
+    margin-bottom:218px;
+}
+.image_wrap{
+    width: 50%;
+    height:auto;
+    overflow: hidden;
+}
+.main_img1{
+    display: block;
+    width:100%;
+    padding-top: 114.722%;
+    background-image: url(../img/food1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.side_box{
+    width:45%;
+    margin-left:70px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.text_box{
+    margin-top:90px;
+    border-left:10px solid #5806E7;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.text_box>h1{
+    color: #9C9C9C;
+    font-size:46px;
+    font-weight:bold;
+    margin-bottom: 28px;
+}
+.text_box>h3{
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.text_box>h4{
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+}
+.swiper_wrap{
+    width:200%;
+    height: auto;/**/
+    margin-top:80px;
+    display:flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+}
+.swiper_wrap>li{
+    width:40%;
+    height:auto;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.dis_none{
+    display: none;
+}
+.food1>div{
+    width:100%;
+    padding-top:138.63%;
+    display: block;
+    background-image: url(../img/externalFile\ \(1\).jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.food2>div{
+    width:100%;
+    padding-top:138.634%;
+    display: block;
+    background-image: url(../img/externalFile\ \(2\).jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.food3>div{
+    width:100%;
+    padding-top:138.634%;
+    display: block;
+    background-image: url(../img/externalFile\ \(9\).jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.food4>div{
+    width:100%;
+    padding-top:138.634%;
+    display: none;
+    background-image: url(../img/foodmain9.jfif);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.food5>div{
+    width:100%;
+    padding-top:138.634%;
+    display: none;
+    background-image: url(../img/foodmain5.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+
+.swiper_btn{
+    width:100%;
+    height: 30px;
+    display:flex;
+}
+.swiper_prev{
+    background-image: url(../img/arrow_prev.png);
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.swiper_next{
+    background-image: url(../img/arrow_next.png);
+    width:30px;
+    height: 30px;
+}
+/*********** 즐길거리 배너 **********/
+.enjoy_atc{
+    margin: auto;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    overflow: hidden;
+    margin-bottom : 218px;
+    margin-top: 162px;
+}
+
+.side_box2{
+    width:calc(58.333% - 62px);
+    overflow: hidden;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+}
+.text_box2{
+    width:100%;
+    margin-top:125px;
+    border-right:10px solid #5806E7;
+    padding-right: 30px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.text_box2>h1{
+    color: #9C9C9C;
+    font-size:46px;
+    font-weight:bold;
+    margin-bottom: 28px;
+}
+.text_box2>h3{
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.text_box2>h4{
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+}
+.enjoy_imgs{
+    width:100%;
+    margin-top: 85px;
+    height:auto;
+    display:flex;
+    overflow: hidden;
+}
+.enjoy_imgs>li{
+    width:25%;/******/
+    height:auto;
+    overflow: hidden;
+}
+.enjoy_imgs>li:last-child{
+    margin-right:0;
+}
+
+.enjoy_imgs>li>div{
+    width:100%;
+    padding-top: 141.08%;
+    display:block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.enjoy1>div{
+    background-image: url(../img/main2-1.jpg);
+}
+.enjoy2>div{
+    background-image: url(../img/main2-2.jpg);
+}
+.enjoy3>div{
+    background-image: url(../img/main2-3.jpg);
+}
+.enjoy4>div{
+    background-image: url(../img/main2-4.jpg);
+}
+.image_wrap2{
+    width:41.667%;
+    height:auto;
+    overflow: hidden;
+}
+.main_img2{
+    display: block;
+    width:100%;
+    padding-top:114.285%;/*800/700*100*/
+    background-image: url(../img/main2_.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+/************* 볼거리 배너 ***************/
+.show_atc{
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    overflow: hidden;
+    margin-bottom : 218px;
+
+}
+.image_wrap3{
+    width:41.667%;
+    height:auto;
+    overflow: hidden;
+}
+.main_img3{
+    display: block;
+    width:100%;
+    padding-top:114.285%;/*800/700*100*/
+    background-image: url(../img/main3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.side_box3{
+    width:calc(58.333% - 62px);
+    overflow: hidden;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+}
+.text_box3{
+    width:100%;
+    margin-top:125px;
+    border-left:10px solid #5806E7;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.text_box3>h1{
+    color: #9C9C9C;
+    font-size:46px;
+    font-weight:bold;
+    margin-bottom: 28px;
+}
+.text_box3>h3{
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.text_box3>h4{
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.show_imgs{
+    width:100%;
+    height:auto;
+    margin-top: 65px;
+    display:flex;
+    overflow: hidden;
+}
+.show_imgs>li{
+    width:25%;
+    height:auto;
+    overflow: hidden;
+}
+.show_imgs>li:last-child{
+    margin-right:0;
+}
+.show_imgs>li>div{
+    width:100%;
+    padding-top: 141.08%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.show1>div{
+    background-image: url(../img/main3-1.jpg);
+    background-position: center center;
+}
+.show2>div{
+    background-image: url(../img/main3-2.jpg);
+    background-position: center center;
+}
+.show3>div{
+    background-image: url(../img/main3-3.jpg);
+    background-position: center center;
+}
+.show4>div{
+    background-image: url(../img/main3-4.jpg);
+    background-position: center center;
+}
+
+/************** 모집/운영시간 버튼 ****************/
+.banner_btn{
+    width:100%;
+   background-color: #F0F1F3;
+   overflow: hidden;
+}
+.btn_wrap{
+    width:1440px;
+    height:auto;
+    margin:auto;
+    padding: 146px 0;
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.btn_wrap>div{
+    width:32%;
+    height:auto;
+    background-color: yellowgreen;
+    overflow:hidden;
+}
+.btn_wrap>div>a{
+    display: block;
+    width:100%;
+    padding-top:76.0416%;
+}
+
+.btn1{
+    background-image: url(../img/btn1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn2{
+    background-image: url(../img/banner2_edit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn3{
+    background-image: url(../img/btn3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/***************** youtube video *************/
+.video-wrap{
+    position:relative;
+    margin-top:218px;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.video-wrap iframe,
+.video-wrap object,
+.video-wrap embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.video_text_box{
+    display: none;
+    border-left:10px solid #5806E7;
+    box-sizing: border-box;
+    padding-left:8px;
+    margin: 50px auto 162px;
+}
+.video_text_box>h3{
+    color:#9C9C9C;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.video_text_box>h4{
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+}
+
+@keyframes marquee-banner__copy {
+    to {
+      transform: translateX(-300px);
+      filter: hue-rotate(0);
+    }
+    from {
+      transform: translateX(1000px);
+      filter: hue-rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+
+    /**  max-width: 1440px  main  **/
+    .main_section{
+        width:100%;
+    }
+    .banner_main_img{
+        width:100%;
+    }
+
+    .btn_wrap{
+        width:100%;
+    }
+    .food_atc{
+        width:100%;
+    }
+    .main_img1{
+        width:100%;
+        height: 100%;
+    }
+    .enjoy_atc{
+        width:100%;
+    }
+    .main_img2{
+        width:100%;
+        background-size: cover;
+        background-position: center center;
+    }
+    .show_atc{
+        width:100%;
+        overflow: hidden;
+    }
+    .main_img3{
+        height:100%;
+        background-size: cover;
+    }
+    .btn_wrap{
+        width:100%;
+    }
+  
+
+
+}
+@media only screen and (max-width: 748px) {
+    .main_section{
+        width:100%;
+    }
+    /********** max-width: 748px main *********/
+    .banner_main{
+        width:100%;
+        position:relative;
+    }
+
+    .banner_main_img{
+        width:100%;
+        height:923px;
+        background-image:url(../img/main.jpg);
+        background-position: center center;
+        background-size: auto 100%;
+    }
+    .banner{
+        width:100%;
+        height:134px;
+        padding:0;
+        bottom:0px;
+        right:0;
+        text-align: center;
+        z-index: 3;
+        /*텍스트 가운데정렬*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner h2{
+        display: block;
+        font-size:22px;
+        padding:20px 0;
+    }
+    .banner h2>p{
+        font-size:32px;
+    }
+
+    .banner_marquee{
+        font-size: 16px;
+        position:absolute;
+        top:1130px;
+        z-index: 1;
+    }
+    .marquee_wrap{
+        white-space: nowrap;
+        /*transform: translate(,0px) translateZ(0px);*/
+    }
+
+
+    /**************** nav : 748px *************/
+    .nav_main{
+        width:100%;
+        margin:220px auto 220px;
+        display:flex;
+    }
+    .nav_main div>img{
+        width:100%;
+    }
+    .nav_main p{
+        line-height: 30px;
+        font-size:14px;
+        white-space: nowrap;
+    }
+
+    /*********** 먹거리 배너 : 748px **********/
+    .food_atc{
+        width:100%;
+        overflow:hidden;
+        display:block;
+        position:relative;
+        margin-bottom: 284px;
+    }
+    .image_wrap{
+        width:100%;
+    }
+    .main_img1{
+        width:100%;
+        padding-top:116.875%;
+    }
+    .side_box{
+        width:100%;
+        margin: auto;
+
+    }
+    .text_box{
+        margin-top:53px;
+        border-left:10px solid #5806E7;
+        padding-left: 8px;
+    }
+    .text_box>h1{
+        font-size:32px;
+    }
+    .text_box>h3{
+        font-size: 16px;
+    }
+    .text_box>h4{
+        font-size:14px;
+    }
+    .swiper_wrap{
+        width:120%;
+        height:172px;
+        margin-top:110px;
+    }
+    .food4>div{
+        display: block;
+    }
+    .food5>div{
+        display: block;
+    }
+    .swiper_wrap>li{
+        width:20%;
+        height: auto;
+    }
+    .swiper_btn{
+        display: none;
+    }
+
+    /*유튜브 : 748px*/
+    .video_text_box{
+        display: block;
+    }
+    .video_text_box>h3{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .video_text_box>h4{
+        font-size:14px;
+        font-weight:bold;
+    }
+
+    /*********** 즐길거리 배너 :748px **********/
+    .enjoy_atc{
+        width:100%;
+        margin: auto;
+        position:relative;
+        margin-bottom : 218px;
+        margin-top: 162px;
+        display:flex;
+        flex-direction: column;
+    }
+    .side_box2{
+        width:100%;
+        margin:auto;
+        order:2;
+        overflow: hidden;
+    }
+    .text_box2{
+        width:100%;
+        margin-top:53px;
+        border-left:10px solid #5806E7;
+        border-right: none;
+        padding-left: 8px;
+        text-align:left;
+        margin-bottom: 53px;
+    }
+
+    .text_box2>h1{
+        font-size:32px;
+    }
+    .text_box2>h3{
+        font-size: 16px;
+    }
+    .text_box2>h4{
+        font-size:14px;
+    }
+
+    .enjoy_imgs{
+        height:auto;
+        margin-left:-10px;
+        margin-top:52px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:auto;
+        overflow:hidden;
+    }
+    .enjoy_imgs>li{
+        width:50%;
+        overflow: hidden;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .enjoy_imgs>li>div{
+        display: block;
+        width:100%;
+        padding-top: 145.16%;
+        background-position: center center;
+        background-size: cover;
+        margin-bottom:20px;
+    }
+    .image_wrap2{
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+    }
+    .main_img2{
+        display: block;
+        width:100%;
+        padding-top:116.875%;
+    }
+
+    /************* 볼거리 배너 748***************/
+    .show_atc{
+            width:100%;
+            margin: auto;
+            display:flex;
+            justify-content: space-between;
+            position:relative;
+            overflow: hidden;
+            margin-bottom : 218px;
+            flex-direction: column;
+        }
+
+    .image_wrap3{
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+    }
+    .main_img3{
+        display: block;
+        width:100%;
+        padding-top:116.875%;
+    }
+
+    .side_box3{
+        width:100%;
+        margin:auto;
+    }
+    .text_box3{
+        padding-right: 8px;
+        box-sizing: border-box;
+        width:100%;
+        margin-top:53px;
+        padding-left: 8px;
+        margin-bottom: 53px;
+    }
+    .text_box3>h1{
+        font-size:32px;
+    }
+    .text_box3>h3{
+        font-size: 16px;
+    }
+    .text_box3>h4{
+        font-size:14px;
+    }
+    .show_imgs{
+        height:auto;
+        margin-left:-10px;
+        margin-top:52px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:auto
+    }
+    .show_imgs>li{
+        width:50%;
+        overflow: hidden;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .show_imgs>li:last-child{
+        margin-right:0;
+    }
+    .show_imgs>li>div{
+        display: block;
+        width:100%;
+        padding-top: 145.16%;
+        background-position: center center;
+        margin-bottom:20px;
+    }
+
+    .show1>div{
+        background-image: url(../img/main3-1.jpg);
+        background-position: center center;
+    }
+    .show2>div{
+        background-image: url(../img/main3-2.jpg);
+        background-position: center center;
+    }
+    .show3>div{
+        background-image: url(../img/main3-3.jpg);
+        background-position: center center;
+    }
+    .show4>div{
+        background-image: url(../img/main3-4.jpg);
+        background-position: center center;
+    }
+
+    /************** 모집/운영시간 버튼 748 ****************/
+    .banner_btn{
+        width:100%;
+       background-color: #F0F1F3;
+       padding:144px 128px;
+       box-sizing: border-box;
+    }
+    .btn_wrap{
+        width:100%;
+        margin:auto;
+        padding: 0;
+        display:flex;
+        flex-direction: column;
+    }
+    .btn_wrap>div{
+        width:100%;
+        height:auto;
+        margin-right:20px;
+        overflow:hidden;
+        margin-bottom:20px;
+        box-sizing: border-box;
+    }
+    .btn_wrap>div>a{
+        display: block;
+        width:100%;
+        padding-top:49.61%;
+    }
+    .btn1{
+        background-image: url(../img/bn1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .btn2{
+        background-image: url(../img/bn2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .btn3{
+        background-image: url(../img/bn3.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+}

@@ -1,0 +1,57 @@
+<main class="notice_write_main">
+        <section class="notice_write_section">
+            <h2>공지사항 수정 페이지</h2>
+
+            
+            <% if(typeof errs !== 'undefined'){ %>
+                <% errs.forEach(()=>{ %>
+                    <h3><%= err.param %> : <%= errs.msg %></h3>
+                <% }) %>
+            <% } %>
+            
+            
+            <form method="POST" action="/updateNotice">
+                <input type="hidden" name="id" value="<%=row.id%>">
+                <table>
+                    <tr>
+                        <td><label>제목 </label></td>
+                        <td>
+                            <input type="text" name="title" id="title" value="<%=row.title%>" required maxlength="100" size="100">
+                        </td>
+                    </tr>
+                    
+                    <!-- <tr>
+                        <td><label>카테고리 </label></td>
+                        <td>
+                            <input type="text" name="cate" id="cate" value="<%=row.cate%>" required maxlength="20" size="100">
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td><label>카테고리</label></td>
+                        <td>
+                            <select name="cate">
+                                <option value="" selected><%=row.cate%></option>
+                                <option value="전체">전체</option>
+                                <option value="모집 공고">모집 공고</option>
+                                <option value="행사">행사</option>
+                                <option value="임시 휴장">임시 휴장</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용 </td>
+                        <td>
+                            <textarea name="content" id="content" rows="30" cols="100"><%=row.content%></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="submit">
+                            <input type="button" value="back" onclick=" javascript:location.href='/notice' ">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+ </main>

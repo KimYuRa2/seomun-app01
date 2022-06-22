@@ -1,0 +1,134 @@
+<main class="notice_main">
+        <!-- 공지사항 페이지 메인 -->
+        <section class="notice_section top_img">
+                <div class="top_txt">
+                    <p class="h_1">
+                        夜하게 놀자! 대한민국 대표 야시장, <span>서문야시장</span>
+                    </p>
+                    <p class="h_2">
+                        무엇을 도와드릴까요?
+                    </p>
+                </div>
+                <div class="search_w">
+                <div class="search_wrap">
+                    <input type="text" placeholder="검색어를 입력하세요 ( ex. 행사 , 임시 휴장 )">
+                    <img src="./img/search.png">
+                </div></div>
+        </section>
+
+        <section class="notice_section title1">  
+            <article class="title1_wrap">
+                <div>카테고리별 질문</div>
+            </article>
+        </section>
+        
+        <article>
+
+             <!-- 글쓰기 버튼 (notice_write)-->
+             <article class="write_btn_box">
+                <div  onclick="javascript:location.href='/newNotice'">새 공지 작성</div>
+            </article>
+            
+            <article class="category_list">
+                <ul class="cate_list_wrap">
+                    <li class="on"><a href="javascript:void(0);">전체</a></li>
+                    <li><a href="javascript:void(0);">모집 공고</a></li>
+                    <li><a href="javascript:void(0);">행사</a></li>
+                    <li><a href="javascript:void(0);">임시 휴장</a></li>
+                </ul>
+                <article class="notice_wrap on">
+                    <%rows.forEach(( row, index )=>{%>
+                    <div>
+                        <a href="javascript:void(0);" onclick="javascript:location.href='/notice_read?id=<%=row.id%>'">
+                            <div class="cate"><%=row.cate%></div>
+                            <div class="notice_i"><%=row.title%></div>
+                            <div class="date"><%=row.update_time%></div>
+                        </a>
+                    </div>
+                    <%})%>
+                </article>
+
+                <article class="notice_wrap" style="display:none">
+                    <%rows.forEach(( row, index )=>{%>
+                        <%if(row.cate=="모집 공고"){%>
+                    <div>
+                        <a href="javascript:void(0);" onclick="javascript:location.href='/notice_read?id=<%=row.id%>'">
+                            <div class="cate"><%=row.cate%></div>
+                            <div class="notice_i"><%=row.title%></div>
+                            <div class="date"><%=row.update_time%></div>
+                        </a>
+                    </div>
+                    <%}})%>
+                </article>
+
+                <article class="notice_wrap" style="display:none">
+                    <%rows.forEach(( row, index )=>{%>
+                        <%if(row.cate=="행사"){%>
+                    <div>
+                        <a href="javascript:void(0);" onclick="javascript:location.href='/notice_read?id=<%=row.id%>'">
+                            <div class="cate"><%=row.cate%></div>
+                            <div class="notice_i"><%=row.title%></div>
+                            <div class="date"><%=row.update_time%></div>
+                        </a>
+                    </div>
+                    <%}})%>
+                </article>
+
+                <article class="notice_wrap" style="display:none">
+                    <%rows.forEach(( row, index )=>{%>
+                        <%if(row.cate=="임시 휴장"){%>
+                    <div>
+                        <a href="javascript:void(0);" onclick="javascript:location.href='/notice_read?id=<%=row.id%>'">
+                            <div class="cate"><%=row.cate%></div>
+                            <div class="notice_i"><%=row.title%></div>
+                            <div class="date"><%=row.update_time%></div>
+                        </a>
+                    </div>
+                    <%}})%>
+                </article>
+
+            </article>
+
+           
+
+            
+            
+
+            <article class="page_num">
+                <div class="num_wrap">
+                    <div><a href="">1</a></div>
+                    <div><a href="">2</a></div>
+                    <div><a href="">3</a></div>
+                    <div><a href="">4</a></div>
+                    <div><a href="">5</a></div>
+                    <div><a href="">></a></div>
+                </div> 
+             </article>
+
+        </article>
+
+        <!--질문을 찾지 못하셨나요?-->
+        <section class="notice_section help_wrap">
+            <article class="h_txt">
+                <p class="h_text1">원하는 질문을 찾지 못하셨나요?</p>
+                <p class="h_text2">
+                    <br>
+                    1:1 온라인 문의를 통해 남겨주시면 답변드리겠습니다. 더욱 빠른 답변을 원하시면 서문야시장 고객센터로 연락주시기 바랍니다.
+                </p>
+            </article>
+
+            <article class="h_btn">
+                <div class="h_btn1">
+                    <a href="">
+                        1:1 문의하기
+                    </a>
+                </div>
+                <div class="h_btn2">
+                    <a href="">
+                        서문야시장 고객센터<br>
+                        <span>053-256-6341</span>
+                    </a>
+                </div>  
+            </article>
+        </section>
+    </main>

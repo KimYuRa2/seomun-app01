@@ -1,0 +1,92 @@
+<!--
+    <20220513>
+    express-ejs-layouts
+     : https://www.npmjs.com/package/express-ejs-layouts
+    다른 모든 ejs페이지의 헤더/푸터를 항상 불러줌 
+     => 다른 ejs파일에는 main부분 내용만 있으면 됨!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/notice_read.css">
+    <!-- <link rel="stylesheet" href="./css/notice_write.css"> -->
+    <link rel="stylesheet" href="./css/newNotice.css">
+    <link rel="stylesheet" href="./css/notice.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <article class="t_nav">
+            <ul>
+                <li class="t_nav_event"><a href="">도전! 투어미션</a></li>
+                <li class="t_nav_event"><a href="">스마트비대면주문</a></li>
+                <li><a href="">먹고보고즐길거리</a></li>
+                <li><a href="">입점신청</a></li>
+                <li><a href="notice">참여마당</a></li>
+                <li><a href="intro">야시장소개</a></li>
+            </ul>
+            <h1><a href="/">
+                <img src="./img/logo.jpg">
+            </a></h1>
+            <div class="h_seach_btn">
+                <img src="./img/search.png">
+            </div>
+            <div class="h_user_btn">
+                <a href="login">
+                    <img src="./img/user.jpg">
+                </a>
+            </div>
+            <div class="h_menu_btn">
+                <img src="./img/menu.png">
+            </div>
+        </article>
+    </header>
+
+    
+    <%- body %>
+    
+
+    <footer>
+        <article class="b_footer">
+            <div class="footer_1">
+                <h2>서문시장야시장</h2>
+            </div>
+            <div class="footer_2">
+                <address>
+                    <ul>
+                        <li>
+                            <span>대구 서문시장 야시장</span>
+                        </li>
+                        <li>대구 중구 달성로 50 서문시장</li>
+                        <li>문의 053-256-6341</li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer_3">
+                <img src="./img/facebook-page-logo.png">
+                <img src="./img/naver-blog_1.png">
+            </div>
+        </article>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../db.js"></script>
+    <script src="../js/file.js"></script>
+    <!-- 페이지네이션 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="jquery.jold.paginator.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.login_main{
+    background-color:slateblue;
+}
+.login_section{
+    padding-top:150px;
+    padding-bottom: 200px;
+}
+.login_form{
+    width:40%;
+    margin: auto;
+    background-color: #fff;
+    padding: 100px;
+    box-sizing: border-box;
+    
+}
+.login_form>h2{
+    font-size: 20px;
+    color:slateblue;
+    font-weight: bold;
+    margin: 0 0 20px;
+
+}
+
+.login_section input{
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+}
+#submit{
+    cursor: pointer;
+    background-color: slateblue;
+    color:white;
+    font-weight: bold;
+    width:100%;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border:0;
+    font-size: 14px;
+}
+.login_sub{
+    display:block;
+}
+.login_sub_list{
+    font-size: 12px;
+    text-align: center;
+}
+.login_sub_list>li{
+    display:inline-block;
+}
+.login_sub_list>li>a{
+    color:black;
+}
+@media only screen and (max-width: 1200px) {
+    .login_section{
+        width:100%;
+    }
+    .login_form{
+        padding: 70px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    .login_form{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .login_form>h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .login_sub_list>li{
+        white-space: nowrap;
+    }
+
+}
