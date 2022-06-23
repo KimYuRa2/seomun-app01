@@ -6,7 +6,7 @@
 const express = require('express')
 // const cors = require("cors")
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 /**
  * Multer 미들웨어는 파일 업로드를 위해 사용되는 multipart/form-data에서 사용된다.
  * 다른 폼으로 데이터를 전송하면 적용이 안된다.
